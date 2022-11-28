@@ -1,6 +1,10 @@
 <script>
+import appCardVue from './appCard.vue';
 export default {
     name: "appMain",
+    components: {
+        appCardVue,
+    },
 };
 </script>
 
@@ -18,7 +22,7 @@ export default {
             </div>
 
             <div class="card_container">
-
+                <appCardVue/>
             </div>
 
         </div>
@@ -53,5 +57,6 @@ export default {
     background-color: blueviolet;
     height: 300px;
     margin-top: 20px;
+    padding: 20px;
 }
 </style>

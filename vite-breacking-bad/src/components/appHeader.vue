@@ -20,5 +20,4 @@ export default {
     display: inline-block;
     color: white;
 }
-
 </style>
