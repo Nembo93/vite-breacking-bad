@@ -67,7 +67,7 @@ export default {
 }
 .founded{
     margin: auto;
-    width: 90%;
+    width: 98%;
     background-color: rgb(33, 37, 41);
     color: white;
     font-size: 16px;
