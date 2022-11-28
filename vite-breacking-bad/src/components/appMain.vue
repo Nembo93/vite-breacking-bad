@@ -6,14 +6,24 @@ export default {
     components: {
         appCardVue,
     },
+
+    data() {
+        return {
+            characters: [],
+        }
+    },
+
     mounted() {
     axios
       .get('https://www.breakingbadapi.com/api/characters')
       .then((response) => {
-        console.log(response.data[0].name)
+        console.log(response.data)
+        this.characters = response.data;
+        console.log(this.characters[0].name);
       })
     }
 };
+    
 </script>
 
 <template>
@@ -30,7 +40,9 @@ export default {
             </div>
 
             <div class="card_container">
-                <appCardVue/>
+                <appCardVue
+                v-for="character in characters"
+                />
             </div>
 
         </div>
