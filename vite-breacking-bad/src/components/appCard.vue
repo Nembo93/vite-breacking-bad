@@ -19,13 +19,23 @@ export default {
 <style>
 .card{
     width: calc((100% / 5) - 20px);
-    height: 200px;
-    background-color: red;
+    padding: 20px;
+    background-color: rgb(46, 58, 70);
     margin-bottom: 10px;
     text-align: center;
 }
 .card_img{
     width: 100px;
-    height: 100px;
+    height: 150px;
+}
+.card h4{
+    color: white;
+}
+.card h5, h6{
+    color: gray;
+}
+.card h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 </style>

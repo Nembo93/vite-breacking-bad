@@ -53,12 +53,12 @@ export default {
 <style>
 .container{
     width: 1000px;
-    background-color: yellow;
+    /* background-color: yellow; */
     margin: auto;
     padding: 20px;
 }
 .main_top{
-    background-color: darkblue;
+    background-color: rgb(46, 58, 70);
     padding: 20px;
 }
 .main_box{
@@ -68,13 +68,13 @@ export default {
 .founded{
     margin: auto;
     width: 90%;
-    background-color: black;
+    background-color: rgb(33, 37, 41);
     color: white;
     font-size: 16px;
     padding: 10px;
 }
 .card_container{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin-top: 20px;
     padding: 20px;
     display: flex;
