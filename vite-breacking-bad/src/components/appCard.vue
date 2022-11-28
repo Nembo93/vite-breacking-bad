@@ -1,13 +1,16 @@
 <script>
 export default {
     name : "appCard",
+    props: {
+        info: Object,
+    },
 };
 </script>
 
 <template>
     <div class="card">
         <img src="">
-        <h4>Walter White</h4>
+        <h4>{{info.name}}</h4>
         <h5>Breacking Bad</h5>
         <h6>Alive</h6>
     </div>

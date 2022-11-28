@@ -42,6 +42,7 @@ export default {
             <div class="card_container">
                 <appCardVue
                 v-for="character in characters"
+                :info = "character"
                 />
             </div>
 
