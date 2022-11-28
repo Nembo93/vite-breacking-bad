@@ -10,7 +10,7 @@ export default {
     axios
       .get('https://www.breakingbadapi.com/api/characters')
       .then((response) => {
-        console.log(response)
+        console.log(response.data[0].name)
       })
     }
 };
