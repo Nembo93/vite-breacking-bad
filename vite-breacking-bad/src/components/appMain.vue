@@ -1,10 +1,18 @@
 <script>
 import appCardVue from './appCard.vue';
+import axios from 'axios';
 export default {
     name: "appMain",
     components: {
         appCardVue,
     },
+    mounted() {
+    axios
+      .get('https://www.breakingbadapi.com/api/characters')
+      .then((response) => {
+        console.log(response)
+      })
+    }
 };
 </script>
 
