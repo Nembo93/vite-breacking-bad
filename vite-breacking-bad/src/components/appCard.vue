@@ -9,10 +9,10 @@ export default {
 
 <template>
     <div class="card">
-        <img src="">
+        <img  class="card_img" :src=info.img>
         <h4>{{info.name}}</h4>
-        <h5>Breacking Bad</h5>
-        <h6>Alive</h6>
+        <h5>{{info.category}}</h5>
+        <h6>{{info.status}}</h6>
     </div>
 </template>
 
@@ -22,5 +22,10 @@ export default {
     height: 200px;
     background-color: red;
     margin-bottom: 10px;
+    text-align: center;
+}
+.card_img{
+    width: 100px;
+    height: 100px;
 }
 </style>

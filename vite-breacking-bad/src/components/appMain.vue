@@ -52,7 +52,7 @@ export default {
 
 <style>
 .container{
-    width: 800px;
+    width: 1000px;
     background-color: yellow;
     margin: auto;
     padding: 20px;
