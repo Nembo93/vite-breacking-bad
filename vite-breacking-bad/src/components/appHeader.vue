@@ -7,7 +7,8 @@ export default {
 </script>
 
 <template>
-    <h1>Header</h1>
+    <img src="../assets/breacking-bad.png" alt="logo">
+    <h1>Breacking Bad Api</h1>
 </template>
 
 <style>
