@@ -15,8 +15,9 @@ export default {
 
 <style>
 .card{
-    width: 100px;
+    width: calc((100% / 5) - 20px);
     height: 200px;
     background-color: red;
+    margin-bottom: 10px;
 }
 </style>

@@ -62,7 +62,6 @@ export default {
 }
 .main_box{
     background-color: white;
-    height: 400px;
     padding: 20px;
 }
 .founded{
@@ -75,8 +74,10 @@ export default {
 }
 .card_container{
     background-color: blueviolet;
-    height: 300px;
     margin-top: 20px;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 </style>
