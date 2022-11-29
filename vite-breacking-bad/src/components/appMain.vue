@@ -25,7 +25,7 @@ export default {
     // },
 
     methods: {
-        changed (){
+        changedCategory (){
             console.log("cambiato!");
         }
     },
@@ -44,7 +44,7 @@ export default {
 <template>
     <div class="container">
         <div class="main_top">
-            <appSearchVue onchange="changed"/>
+            <appSearchVue @changed="changedCategory"/>
         </div>
 
         <div class="main_box">
