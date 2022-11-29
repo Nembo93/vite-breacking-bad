@@ -1,25 +1,34 @@
 <script>
-import appCardVue from './appCard.vue';
 import axios from 'axios';
+import {store} from "../store";
+
+import appCardVue from './appCard.vue';
+import appSearchVue from './appSearch.vue';
+
 export default {
     name: "appMain",
     components: {
         appCardVue,
+        appSearchVue,
     },
 
     data() {
         return {
-            characters: [],
-        }
+            store,
+        };
     },
+
+    // data() {
+    //     return {
+    //         characters: [],
+    //     }
+    // },
 
     mounted() {
     axios
       .get('https://www.breakingbadapi.com/api/characters')
       .then((response) => {
-        console.log(response.data)
-        this.characters = response.data;
-        console.log(this.characters[0].name);
+        this.store.characters = response.data;
       })
     }
 };
@@ -29,9 +38,10 @@ export default {
 <template>
     <div class="container">
         <div class="main_top">
-            <select id="">
+            <appSearchVue/>
+            <!-- <select id="">
                 <option value="">Select category</option>
-            </select>
+            </select> -->
         </div>
 
         <div class="main_box">
@@ -41,7 +51,7 @@ export default {
 
             <div class="card_container">
                 <appCardVue
-                v-for="character in characters"
+                v-for="character in store.characters"
                 :info = "character"
                 />
             </div>
