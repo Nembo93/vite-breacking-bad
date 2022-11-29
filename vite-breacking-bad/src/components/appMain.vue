@@ -24,6 +24,12 @@ export default {
     //     }
     // },
 
+    methods: {
+        changed (){
+            console.log("cambiato!");
+        }
+    },
+
     mounted() {
     axios
       .get('https://www.breakingbadapi.com/api/characters')
@@ -38,10 +44,7 @@ export default {
 <template>
     <div class="container">
         <div class="main_top">
-            <appSearchVue/>
-            <!-- <select id="">
-                <option value="">Select category</option>
-            </select> -->
+            <appSearchVue onchange="changed"/>
         </div>
 
         <div class="main_box">
