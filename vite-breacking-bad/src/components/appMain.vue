@@ -44,7 +44,7 @@ export default {
 <template>
     <div class="container">
         <div class="main_top">
-            <appSearchVue @changed="changedCategory"/>
+            <appSearchVue/>
         </div>
 
         <div class="main_box">
